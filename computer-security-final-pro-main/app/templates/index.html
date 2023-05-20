@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if not current_user.is_authenticated %}
+<div class="container mt-4">
+  <h1>Welcome to Communication_LTD!</h1>
+  <p>Computer Security course - H.I.T 2023</p>
+  <p>Submitted by:</p>
+
+  <ul>
+    <li>Zohar Hazani</li>
+    <li>Lior Shlomo</li>
+    <li>Amit Hadad</li>
+    <li>Yoni Yirmiyahu</li>
+    <li>Rotem Mor-Haim</li>
+  </ul>
+</div>
+{% endif %}
+{% if current_user.is_authenticated %}
+<div class="container mt-4">
+  <h1>Hello {{current_user.username}}</h1>
+  <p>You are now logged in to our secured web site!!!</p>
+  <a class="nav-link" href="{{ url_for('main.add_customer') }}">Add Customer</a>
+ 
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,32 @@
+communication_ltd/
+    ├── app/
+    │   ├── static/
+    │   │   ├── css/
+    │   │   ├── js/
+    │   ├── main/
+    │   │   ├── routes.py
+    │   ├── templates/
+    │   │   ├── base.html
+    │   │   ├── index.html
+    │   │   ├── register.html
+    │   │   ├── login.html
+    │   │   ├── change_password.html
+    │   │   ├── forgot_password.html
+    │   │   ├── system.html
+    │   │   ├── add_customer.html
+    │   │   ├── reset_password.html
+    │   │   ├── reset_password_2.html
+    │   ├── __init__.py
+    │   ├── models.py
+    │   ├── forms.py
+    ├── env/
+    ├── tests/
+    ├── .gitignore
+    ├── config.py
+    ├── requirements.txt
+    ├── run.py
+    ├── key.pem
+    ├── cert.pem
+    ├── csr.pem
+    ├── app.db
+
