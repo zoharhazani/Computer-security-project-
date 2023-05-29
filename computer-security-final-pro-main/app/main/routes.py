@@ -204,7 +204,7 @@ def forgot_password():
         else:
             flash("No user found with that email address.", "warning")
             return render_template("forgot_password.html", form=form)
-
+     return render_template("forgot_password.html", form=form)
 
 @main_bp.route("/reset_password", methods=["GET", "POST"])
 def reset_password():
